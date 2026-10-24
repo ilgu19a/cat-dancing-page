@@ -1,0 +1,36 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-primary: #1a1a2e;
+  --bg-secondary: #16213e;
+  --accent: #e94560;
+  --accent-light: #ff6b8a;
+  --text-primary: #eaeaea;
+  --text-secondary: #a0a0b0;
+  --btn-bg: #0f3460;
+  --btn-hover: #e94560;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+#root {
+  height: 100%;
+}
+
+@media (max-width: 480px) {
+  h1 { font-size: 1.6rem !important; }
+  img[alt="댄싱 고양이"] { width: 140px !important; height: auto !important; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  img[alt="댄싱 고양이"] { width: 170px !important; height: auto !important; }
+}
